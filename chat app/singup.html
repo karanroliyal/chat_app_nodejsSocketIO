@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- nav font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@500&family=Oswald:wght@300;400&family=PT+Sans&family=Quicksand:wght@300&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <!-- login css  -->
+    <link rel="stylesheet" href="css\singup.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="li"><img src="logo-removebg-preview.png" alt=""></ul>
+            <ul class="li"><a href="app.html">Home</a></ul>
+            <ul class="li"><a href="">Id</a></ul>
+            <ul class="li" id="login"><a href="">Login</a></ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="login-container">
+            <div class="login-text">
+                <p>VILGAX Sign Up</p>
+            </div>
+            <form action="connect.php" method="post">
+                <div class="bot" id="">
+                    <label class="details" for="firstname">First name</label>
+                    <input class="details1" type="text" name="firstName">
+                </div>
+                <div class="bot" id="">
+                    <label class="details" for="lastname">Last name</label>
+                    <input class="details1" type="text" name="lastName">
+                </div>
+                <div class="bot" id="">
+                    <label class="details" for="Password">password</label>
+                    <input class="details1" id="myInput" type="password" name="password">
+                    <span class="show-pass">
+                        <input type="checkbox" class="Show" onclick="myFunction()"> <span class="show2">Show
+                            Password</span>
+                    </span>
+
+                </div>
+                <div class="bot" id="">
+                    <label class="details" for="Email">Email</label>
+                    <input class="details1" id="myInput" type="email" name="email">
+                </div>
+                <div class="bot">
+                    <h6>Already have an account ? <a href="login.html">Login</a></h6>
+                </div>
+                <div class="bot1" id="">
+                    <input class="btn" type="submit" name="Email">
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <!-- show password js  -->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+
+
+    <!-- Animation  -->
+
+    <body>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </body>
+</body>
+
+</html>

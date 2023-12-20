@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* selection */
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+/* SCROLL-BAR CSS */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(2, 2, 107);
+    width: 5px;
+    height: 50px;
+}
+
+/* navigation css */
+
+nav{
+    display: flex;
+    /* background-color: greenyellow; */
+    align-items: center;
+    justify-content: center;
+    height: 61px;
+    font-family: PT Sans;
+
+    z-index: 100;
+    position: relative;
+}
+li{
+    list-style: none;
+    font-family: Kanit;
+}
+.li{
+    position: relative;
+    left: -475px;
+}
+.li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: PT Sans;
+    font-weight: bolder;
+
+    z-index: 100;
+    position: relative;
+}
+.li a:hover{
+    color: black;
+}
+.li img{
+    width: 50px;
+    height: 50px;
+}
+nav #login{
+    display: flex;
+    align-items: end;
+}
+
+/* 1st container */
+
+.cont{
+    display: grid;
+    grid-template-areas: 'wel log';
+    justify-content: center;
+}
+.welcome p{
+    /* border: 2px solid black; */
+    grid-area: wel;
+    margin-right: 32px;
+    margin-top: 41px;
+    margin-left: 81px;
+    font-size: 87px;
+    line-height: 81px;
+
+    z-index: 100;
+    position: relative;
+}
+.logo img {
+    /* border: 2px solid black; */
+    grid-area: log;
+
+    z-index: 100;
+    position: relative;
+}
+
+/* animation text  */
+
+.welcome p
+{
+    font-family: Kanit;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.Join{
+    display: block;
+    position: relative;
+    top: -260px;
+    left: 64px;
+
+    z-index: 100;
+    position: relative;
+}
+.Join button {
+    width: 142px;
+    height: 50px;
+    font-size: 21px;
+    background: beige;
+    cursor: pointer;
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 29px;
+
+    z-index: 100;
+    position: relative;
+}
+.Join button:hover {
+    background-color: rgb(23, 117, 45);
+    color: white;
+}
+.Join button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Animation  */
+
+body {
+    background-color: #fee440;
+}
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+.links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+a:hover {
+    text-decoration: underline;
+}
+a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin: 0 0 -0.1em 0.3em;
+}
+
